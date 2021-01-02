@@ -1,0 +1,12 @@
+/* Styles */
+h1{
+    color: rgba(33,37,41,0.9);
+}
+
+.fa-check-circle{
+    color: green;
+}
+
+.fa-minus-circle{
+    color: rgb(253, 132, 152);
+}
