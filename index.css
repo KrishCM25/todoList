@@ -32,19 +32,24 @@ h1{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
-.alert{
+.alert, .alert-complete{
     padding: 7px 7px 5px 10px;
     margin: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    background: #fdff86;
 }
-.alert p{
+.alert{
+    background: rgb(255, 250, 117);
+}
+.alert-complete{
+    background: rgb(174, 227, 255);
+}
+.name-tarea{
     font-family: 'Open Sans', sans-serif;
 }
-.fa-check-circle,.fa-minus-circle{
+.fa-check-circle,.fa-minus-circle,.fa-undo-alt{
     font-size: 28px;
     margin: 0 3px;
 }
@@ -54,4 +59,8 @@ h1{
 
 .fa-minus-circle{
     color: rgb(253, 132, 152);
+}
+.fa-undo-alt{
+    color: aliceblue;
+    font-size: 26px;
 }
