@@ -21,8 +21,10 @@ h1{
     margin: 10px 20px;
     border-radius: 4px;
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 .btn-primary{
+    cursor: pointer;
     margin: 10px 20px;
     color: #fff;
     padding: 10px 20px;
@@ -32,6 +34,9 @@ h1{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
+.lista-tareas{
+    width: 100%;
+}
 .alert, .alert-complete{
     padding: 7px 7px 5px 10px;
     margin: 10px 20px;
@@ -39,19 +44,35 @@ h1{
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: default;
 }
+
 .alert{
     background: rgb(255, 250, 117);
 }
 .alert-complete{
     background: rgb(174, 227, 255);
 }
-.name-tarea{
+.alert-nothing{
+    background: rgb(162, 162, 162);
+    display: block;
+    text-align: center;
+    padding: 7px 7px 5px 10px;
+    margin: 10px 20px;
+    border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
+    }
+/* .name-tarea{
+    font-family: 'Open Sans', sans-serif;
+} */
+.icon-container{
+    min-width: 73px;
 }
 .fa-check-circle,.fa-minus-circle,.fa-undo-alt{
     font-size: 28px;
     margin: 0 3px;
+    cursor: pointer;
 }
 .fa-check-circle{
     color: green;
