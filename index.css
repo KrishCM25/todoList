@@ -34,6 +34,9 @@ h1{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
+.btn-primary:hover{
+    background: #3f69ff;
+}
 .lista-tareas{
     width: 100%;
 }
@@ -73,6 +76,9 @@ h1{
     font-size: 28px;
     margin: 0 3px;
     cursor: pointer;
+}
+.fa-check-circle:hover,.fa-minus-circle:hover,.fa-undo-al:hover{
+    opacity: 70%;
 }
 .fa-check-circle{
     color: green;
