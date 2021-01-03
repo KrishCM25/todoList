@@ -70,11 +70,11 @@ const pintarTareas = () => {
     listaTarea.innerHTML = ''
     Object.values(tareas).forEach(tarea => {
         const clone = template.cloneNode(true)
-        clone.querySelector('p').textContent = tarea.texto
+        clone.querySelector('.name-tarea').textContent = tarea.texto
         if(tarea.estado){
             clone.querySelector('.alert').classList.replace('alert','alert-complete')
             clone.querySelectorAll('.fas')[0].classList.replace('fa-check-circle','fa-undo-alt')
-            clone.querySelector('p').style.textDecoration = 'line-through'
+            clone.querySelector('.name-tarea').style.textDecoration = 'line-through'
         }
         clone.querySelectorAll('.fas')[0].dataset.id = tarea.id
         clone.querySelectorAll('.fas')[1].dataset.id = tarea.id
@@ -89,10 +89,13 @@ const btnAction = e => {
     iconID = e.target.dataset.id
     
     if(e.target.localName == "i"){
-        if(iconClass.contains('fa-minus-circle')) 
-            delete tareas[iconID]
-        else if(iconClass.contains('fa-check-circle')) 
+        if(iconClass.contains('fa-minus-circle')){
+            if(confirm("Borrar Tarea")) delete tareas[iconID]
+            else return
+        }
+        else if(iconClass.contains('fa-check-circle')){
             tareas[iconID].estado = true
+        }
         else tareas[iconID].estado = false
         console.log(tareas)
         pintarTareas()
