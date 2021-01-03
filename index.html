@@ -12,16 +12,21 @@
 <body>
     <div class="container">
         <h1>Todo App</h1>
-        <form id="formulario" autocomplete="off">
-            <input type="text"
-            placeholder="Ingrese Tarea"
-            class="form-control"
-            id="input"
-            autofocus
-            >
-            <button class="btn-primary">Agregar</button>
-        </form>
-        <div id="lista-tareas"></div>
+        <div class="container-content">
+            <div class="entornos">
+                <div class="entorno">Entorno</div>
+            </div>
+            <form id="formulario" autocomplete="off">
+                <input type="text"
+                placeholder="Ingrese Tarea"
+                class="form-control"
+                id="input"
+                autofocus
+                >
+                <button class="btn-primary">Agregar</button>
+            </form>
+            <div id="lista-tareas"></div>
+        </div>
     </div>
     <template id="template">
             <div class="alert">
