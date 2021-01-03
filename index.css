@@ -66,9 +66,9 @@ h1{
     border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
     }
-/* .name-tarea{
-    font-family: 'Open Sans', sans-serif;
-} */
+.name-tarea{
+    overflow: auto;
+}
 .icon-container{
     min-width: 73px;
 }
