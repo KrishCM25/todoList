@@ -81,7 +81,7 @@ h1{
     font-family: 'Open Sans', sans-serif;
     }
 .name-tarea{
-    overflow: auto;
+    overflow-wrap: anywhere;
     margin-right: 15px;
 }
 .icon-container{
